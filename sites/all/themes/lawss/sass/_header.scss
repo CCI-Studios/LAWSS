@@ -1,0 +1,137 @@
+#navigation
+{
+	padding: 10px 20px;
+}
+
+#logo
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#block-system-main-menu
+{	
+	margin-right: 1em;
+
+	ul.menu
+	{	
+		a,
+		span
+		{
+			display: block;
+			padding: 10px 0px;
+		}
+	}
+
+	li.expanded
+	{	
+		&:hover ul.menu
+		{
+			display: block;
+		}
+
+		ul.menu
+		{
+			position: absolute;
+			background: white;
+			top: 40px;
+			display: none;
+		}
+
+		li
+		{
+			display: block;
+			padding: 0px 10px;
+			margin-left: 0px;
+
+			a
+			{	
+				display: block;
+				padding: 10px 0px;
+			}
+		}
+	}
+}
+
+.region-navigation
+{
+	float: right;
+	margin-top: 12px;
+}
+
+ul.menu
+{
+	li
+	{
+		list-style: none;
+		display: inline-block;
+	}
+
+	a
+	{	
+		color: $blue;
+	}
+}
+
+
+#block-system-main-menu,
+#block-search-form,
+.region-navigation
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#navigation
+{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 10;
+}
+
+#search-block-form
+{
+	.form-submit
+	{
+		border: 0px;
+		font-size: 0px;
+		color: transparent;
+		height: 20px;
+		width: 20px;
+		margin-top: 0px;
+		background: url(../images/search-icon.png) no-repeat;
+	}
+
+	.form-actions
+	{
+		position: absolute;
+	    top: 4px;
+	    left: 10px;
+	}
+
+	.form-text
+	{
+		border: 1px solid $blue;
+		padding: 10px;
+	    width: 130px;
+  		padding-left: 35px;
+  		color: $blue;
+  		font-size: 14px;
+	}
+}
+
+::-webkit-input-placeholder {
+	   color: $blue;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $blue;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $blue;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: $blue;  
+	}

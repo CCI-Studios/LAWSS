@@ -1,0 +1,17 @@
+name = lawss
+description = lawss Custom
+core = 7.x
+
+scripts[] = js/background-size.js
+
+stylesheets[all][] = css/screen.css
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[help] = Help
+regions[front-content] = Front Content
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[widgets] = Widgets
+regions[footer] = Footer
+

@@ -1,0 +1,298 @@
+body
+{
+	font-family: 'Droid Sans', sans-serif;
+	color: $blue;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+p
+{
+	line-height: 1.5em;
+	padding-bottom:20px;
+}
+
+h2
+{
+	font-size: 32px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+	
+.button,
+a.views-more-link,
+.form-submit
+{	
+	color: white!important;
+	border-radius: 20px;
+    padding: 7px 42px;
+    display: inline-block;
+	background: $blue;
+	margin-top: 30px;
+	text-decoration: none!important;
+}
+
+#footer
+{	
+	text-align: center;
+	background: url(../images/footer-back.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 60px 10px 40px;
+	color: white;
+
+	ul.menu
+	{
+		float: none;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	ul.menu li a
+	{
+		color: white;
+	}
+}
+
+#site-by-cci a
+{
+	color: white;
+}
+
+.not-front #content
+{
+	max-width: 960px;
+	margin: 0px auto 50px;
+	padding: 0px 10px;
+}
+
+#content
+{
+	overflow: hidden;
+	position: relative;
+
+	a
+	{
+		text-decoration: underline;
+		color: $blue;
+	}
+}
+
+#page-title
+{
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 2.8em;
+	font-weight: bold;
+}
+
+.view-news
+{
+	.views-row
+	{	
+		overflow: hidden;
+		margin-bottom: 30px;
+		clear: left;
+	}
+
+	.views-field-nothing
+	{
+	    float: left;
+	    width: 60%;
+	}
+
+	.views-field-title
+	{	
+		color: #1860bf;
+		font-size: 18pt;
+		font-weight: bold;
+		max-width: 280px;
+	}
+
+	.views-field-date
+	{
+		padding-bottom: 20px;
+
+		&:after
+		{	
+			display: block;
+			padding-top: 10px;
+			content: url(../images/curvy-icon.png);
+		}
+	}
+
+	.views-more-link
+	{
+		display: block;
+		width: 79px;
+	}
+}
+
+
+.views-field-field-image-news
+{
+	float: left;
+	padding-right: 50px;
+}
+
+#block-views-report-archive-block
+{
+	position: absolute;
+    right: 0;
+    top: 110px;
+}
+
+.page-node-7
+{	
+	#block-system-main,
+	#block-webform-client-block-6
+	{
+		float: left;
+	}
+
+	#block-system-main
+	{
+		width: 49%;
+	}
+
+	#block-webform-client-block-6
+	{
+		width: 51%;
+	}
+
+
+	#block-system-main > .content
+	{
+		padding-right: 40px;
+	}
+}
+
+#block-block-5,
+.page-reports #block-system-main
+{
+	width: 60%;
+}
+
+#header
+{	position: relative;
+	&:after
+	{
+	    content: "";
+	    bottom: -2px;
+	    position: absolute;
+	    width: 100%;
+	    height: 100px;
+	    background: url(../images/white-curve.png) no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+}
+
+#archive-block
+{
+	position: absolute;
+	top: 75px;
+	right: 110px;
+
+	h2
+	{
+		padding-bottom: 10px;
+	}
+
+	a
+	{
+		text-decoration: none!important;
+		font-size: 1.2em;
+	}
+}
+
+.page-reports 
+{	
+
+	#block-system-main
+	{
+		padding-bottom: 100px;
+	}
+
+	.views-row
+	{
+		margin-bottom: 40px;
+	}
+
+	.views-field-title
+	{
+		font-size: 1.8em;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+
+	.views-field-field-links
+	{
+		font-weight: bold;
+
+		a
+		{
+			text-decoration: none!important;
+		}
+
+	}
+}
+
+.view-organizations-views
+{	
+	text-align: center;
+	.view-content h3
+	{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.views-row
+	{	
+		width: 220px;
+		display: inline-block;
+		text-align: center;
+		margin: 20px 0px;
+		position: relative;
+		vertical-align: bottom;
+		padding-bottom: 40px;
+	}
+
+	.views-field-field-image-logo
+	{	
+		a
+		{	
+			display: block;
+			width: 120px;
+			margin: 0 auto;
+		}
+
+		img
+		{
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	}
+
+	.views-field-title
+	{
+		position: absolute;
+		width: 100%;
+
+		a
+		{
+			text-decoration: none!important;
+		}
+	}
+}
+
+#mobile-menu
+{
+	display: none;
+}
