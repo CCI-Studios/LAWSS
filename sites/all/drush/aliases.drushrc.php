@@ -1,12 +1,13 @@
 <?php
-/*
+
 $aliases['dev'] = array(
-	'uri'=> 'example.com',
-	'root' => '/home/example/subdomains/dev/public_html',
-	'remote-host'=> 'host.lambtonshield.com',
-	'remote-user'=> 'example',
+	'uri'=> 'lawss.ccistaging.com',
+	'root' => '/home/staging/subdomains/lawss/public_html',
+	'remote-host'=> 'host.ccistudios.com',
+	'remote-user'=> 'staging',
 	'path-aliases'=> array(
 		'%files'=> 'sites/default/files',
-	)
+	),
+
+	'ssh-options' => '-p 37241'
 );
-*/

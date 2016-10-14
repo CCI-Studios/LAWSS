@@ -1,8 +1,12 @@
+@font-face {
+  font-family: 'verdana';
+  src: url('../fonts/Verdana.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Verdana.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 body
 {
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'verdana', sans-serif;
 	color: $blue;
-	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -10,11 +14,12 @@ p
 {
 	line-height: 1.5em;
 	padding-bottom:20px;
+	font-size: 0.95em;
 }
 
 h2
 {
-	font-size: 32px;
+	font-size: 1.5em;
 }
 
 a
@@ -34,6 +39,7 @@ a.views-more-link,
 	background: $blue;
 	margin-top: 30px;
 	text-decoration: none!important;
+	-webkit-appearance: none;
 }
 
 #footer
@@ -41,7 +47,7 @@ a.views-more-link,
 	text-align: center;
 	background: url(../images/footer-back.png) no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	padding: 60px 10px 40px;
 	color: white;
 
@@ -87,7 +93,7 @@ a.views-more-link,
 	text-transform: uppercase;
 	text-align: center;
 	padding-bottom: 20px;
-	font-size: 2.8em;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
@@ -109,19 +115,19 @@ a.views-more-link,
 	.views-field-title
 	{	
 		color: #1860bf;
-		font-size: 18pt;
+		font-size: 1.2em;
 		font-weight: bold;
-		max-width: 280px;
+		max-width: 300px;
 	}
 
 	.views-field-date
 	{
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 
 		&:after
 		{	
 			display: block;
-			padding-top: 10px;
+			padding-top: 15px;
 			content: url(../images/curvy-icon.png);
 		}
 	}
@@ -129,7 +135,8 @@ a.views-more-link,
 	.views-more-link
 	{
 		display: block;
-		width: 79px;
+		width: 90px;
+		margin-top: 15px;
 	}
 }
 
@@ -226,12 +233,12 @@ a.views-more-link,
 
 	.views-field-title
 	{
-		font-size: 1.8em;
+		font-size: 1.2em;
 		font-weight: bold;
 		padding-bottom: 10px;
 	}
 
-	.views-field-field-links
+	.views-field-field-links-1
 	{
 		font-weight: bold;
 
@@ -245,7 +252,6 @@ a.views-more-link,
 
 .view-organizations-views
 {	
-	text-align: center;
 	.view-content h3
 	{
 		margin-top: 30px;
@@ -290,6 +296,16 @@ a.views-more-link,
 			text-decoration: none!important;
 		}
 	}
+}
+
+#site-by-cci
+{
+	font-size: 0.75em;
+}
+
+#search-form .form-submit
+{	
+	margin-top: 10px;
 }
 
 #mobile-menu

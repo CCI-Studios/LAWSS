@@ -5,7 +5,7 @@
 	{
 		display: block;
 		position: absolute;
-		top: 30px;
+		top: 40px;
 		right: 20px;
 		font-weight: bold;
 		cursor: pointer;
@@ -16,7 +16,7 @@
 		display: none;
 		position: absolute;
 		right: 0px;
-		top: 70px;
+		top: 93px;
 		background: white;
 		border: 1px solid $blue;
 	}
@@ -54,6 +54,11 @@
 				margin: 0px 15px;
 				padding: 0px;
 				display: block;
+
+				a,span
+				{
+					padding: 15px 0px;
+				}
 			}
 		}
 	}
@@ -61,6 +66,7 @@
 	#block-search-form
 	{
 		display: block;
+		margin-top: 0px;
 
 		.form-text
 		{	
@@ -111,8 +117,8 @@
 
 			img
 			{
-				width: 280px;
-				height: auto;
+				width: 280px!important;
+				height: auto!important;
 			}
 		}
 	}
@@ -125,6 +131,36 @@
 	.view-news .views-field-nothing
 	{
 		width: 100%;
+	}
+
+	#navigation
+	{
+		padding: 18px 10px;
+	}
+
+	#mobile-menu
+	{
+		top: 30px;
+	}
+
+	#logo
+	{
+		width: 150px;
+
+		img
+		{
+			width: 100%;
+		}
+	}
+
+	.region-navigation
+	{
+		top: 77px;
+	}
+
+	.view-organizations-views
+	{
+		text-align: center;	
 	}
 
 	.page-node-7 #block-system-main, .page-node-7 #block-webform-client-block-6
