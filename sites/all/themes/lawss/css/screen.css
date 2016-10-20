@@ -317,8 +317,7 @@ textarea {
 #block-imageblock-1 {
   height: 500px;
   background-size: cover;
-  background-position: center;
-  z-index: -1; }
+  background-position: center; }
 
 .front #inner-content {
   display: none; }
@@ -494,4 +493,7 @@ textarea {
     position: relative;
     margin-bottom: 20px;
     top: auto;
-    right: auto; } }
+    right: auto; }
+
+  #block-search-form {
+    width: 118px; } }
