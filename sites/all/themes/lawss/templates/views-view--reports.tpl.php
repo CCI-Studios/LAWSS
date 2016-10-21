@@ -20,12 +20,17 @@ for ($i=1990; $i < date("Y"); $i++) {
 	foreach ($nids as $key => $value) {
 
 	$node = node_load($value);
+	
+	$report_year = $node->field_report_year['und'][0]['value'];
+    $user_tz = 'Canada/Eastern';
+    $report_year = new DateTime($report_year,new DateTimeZone($user_tz));
+    $report_year = $report_year->format('Y');
 
 	if(isset($node->field_report_type))
 	{	
 		if($node->field_report_type['und'][0]['tid'] == 1)
 		{	
-			$formatted_date = format_date($node->created, 'custom', 'Y');
+			$formatted_date = $report_year;
 
 			if($formatted_date == $i )
 			{	
@@ -35,8 +40,7 @@ for ($i=1990; $i < date("Y"); $i++) {
 
 		if($node->field_report_type['und'][0]['tid'] == 2)
 		{
-			$formatted_date = format_date($node->created, 'custom', 'Y');
-
+			$formatted_date = $report_year;
 			if($formatted_date == $i )
 			{	
 				$flag_compliance++;
@@ -45,7 +49,7 @@ for ($i=1990; $i < date("Y"); $i++) {
 
 		if($node->field_report_type['und'][0]['tid'] == 3)
 		{
-			$formatted_date = format_date($node->created, 'custom', 'Y');
+			$formatted_date = $report_year;
 
 			if($formatted_date == $i )
 			{	
