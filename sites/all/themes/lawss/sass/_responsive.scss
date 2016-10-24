@@ -79,7 +79,7 @@
 
 	#block-block-3
 	{
-	    max-width: 350px;
+	    max-width: 500px;
 	    margin: 0 auto;
 	}
 
@@ -123,6 +123,16 @@
 		}
 	}
 
+	.webform-component-textfield,
+	.webform-component-email
+	{
+		width: 38%;
+	}
+
+	.views-field-field-image-news
+	{
+		padding-right: 22px;
+	}
 
 }
 

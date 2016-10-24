@@ -434,7 +434,7 @@ textarea {
       width: 79%; }
 
   #block-block-3 {
-    max-width: 350px;
+    max-width: 500px;
     margin: 0 auto; }
 
   .region-header .block-body img {
@@ -457,7 +457,14 @@ textarea {
       margin-top: 20px; }
       #block-block-4 .right-content img {
         width: 280px !important;
-        height: auto !important; } }
+        height: auto !important; }
+
+  .webform-component-textfield,
+  .webform-component-email {
+    width: 38%; }
+
+  .views-field-field-image-news {
+    padding-right: 22px; } }
 @media screen and (max-width: 767px) {
   .view-news .views-field-nothing {
     width: 100%; }
