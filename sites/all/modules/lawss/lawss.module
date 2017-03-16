@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the LAWSS feature.
+ */
+
+include_once 'lawss.features.inc';
